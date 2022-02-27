@@ -1,0 +1,6 @@
+/rhome/m/mhadzic9/workspace/TP/T4/Z5/main.cpp: In instantiation of ‘std::vector<Tip> Presjek(std::vector<Tip>, std::vector<Tip>) [with Tip = double]’:
+/rhome/m/mhadzic9/workspace/TP/T4/Z5/main.cpp:65:29:   required from here
+/rhome/m/mhadzic9/workspace/TP/T4/Z5/main.cpp:12:25: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+             if (v1.at(i)==v2.at(j)) {
+/rhome/m/mhadzic9/workspace/TP/T4/Z5/main.cpp:21:25: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+             if (v3.at(i)==v3.at(j)) {

@@ -1,0 +1,7 @@
+/rhome/m/mhadzic9/workspace/TP/ZSR3/Z44/main.cpp: In function ‘int main()’:
+/rhome/m/mhadzic9/workspace/TP/ZSR3/Z44/main.cpp:11:14: error: void value not ignored as it ought to be
+     int a=F(3);
+              ^
+/rhome/m/mhadzic9/workspace/TP/ZSR3/Z44/main.cpp:11:9: warning: unused variable ‘a’ [-Wunused-variable]
+     int a=F(3);
+         ^

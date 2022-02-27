@@ -1,0 +1,285 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3767": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccLcLO8E.o: In function `main':\nbs_test_3767.cpp:158: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3767.cpp:161: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3767.cpp:164: undefined reference to `Matrica<double>::operator=(Matrica<double>&&)'\n/tmp/ccLcLO8E.o: In function `Matrica<double>::~Matrica()':\nbs_test_3767.cpp:38: undefined reference to `Matrica<double>::DeAlocirajMemoriju(double**, int)'\n/tmp/ccLcLO8E.o: In function `operator*(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3767.cpp:81: undefined reference to `Matrica<double>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3773": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccbrQMip.o: In function `main':\nbs_test_3773.cpp:157: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3773.cpp:160: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3773.cpp:163: undefined reference to `Matrica<double>::operator=(Matrica<double>&&)'\n/tmp/ccbrQMip.o: In function `Matrica<double>::~Matrica()':\nbs_test_3773.cpp:38: undefined reference to `Matrica<double>::DeAlocirajMemoriju(double**, int)'\n/tmp/ccbrQMip.o: In function `operator+(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3773.cpp:48: undefined reference to `Matrica<double>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3774": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccUIBlVU.o: In function `main':\nbs_test_3774.cpp:157: undefined reference to `Matrica<int>::Matrica(int, int, char)'\nbs_test_3774.cpp:160: undefined reference to `Matrica<int>::Matrica(int, int, char)'\n/tmp/ccUIBlVU.o: In function `Matrica<int>::~Matrica()':\nbs_test_3774.cpp:38: undefined reference to `Matrica<int>::DeAlocirajMemoriju(int**, int)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3775": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccdz8J7F.o: In function `main':\nbs_test_3775.cpp:157: undefined reference to `Matrica<int>::Matrica(int, int, char)'\nbs_test_3775.cpp:160: undefined reference to `Matrica<int>::Matrica(int, int, char)'\nbs_test_3775.cpp:163: undefined reference to `Matrica<int>::operator=(Matrica<int>&&)'\n/tmp/ccdz8J7F.o: In function `Matrica<int>::~Matrica()':\nbs_test_3775.cpp:38: undefined reference to `Matrica<int>::DeAlocirajMemoriju(int**, int)'\n/tmp/ccdz8J7F.o: In function `operator-(Matrica<int> const&, Matrica<int> const&)':\nbs_test_3775.cpp:107: undefined reference to `Matrica<int>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3776": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccx9T0T8.o: In function `main':\nbs_test_3776.cpp:160: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3776.cpp:160: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3776.cpp:165: undefined reference to `Matrica<double>::operator=(Matrica<double>&&)'\n/tmp/ccx9T0T8.o: In function `Matrica<double>::~Matrica()':\nbs_test_3776.cpp:38: undefined reference to `Matrica<double>::DeAlocirajMemoriju(double**, int)'\n/tmp/ccx9T0T8.o: In function `operator+(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3776.cpp:48: undefined reference to `Matrica<double>::Matrica(int, int, char)'\n/tmp/ccx9T0T8.o: In function `operator*(double, Matrica<double> const&)':\nbs_test_3776.cpp:114: undefined reference to `Matrica<double>::Matrica(int, int, char)'\n/tmp/ccx9T0T8.o: In function `operator-(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3776.cpp:107: undefined reference to `Matrica<double>::Matrica(int, int, char)'\n/tmp/ccx9T0T8.o: In function `operator*(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3776.cpp:81: undefined reference to `Matrica<double>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3777": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccmYcWvT.o: In function `main':\nbs_test_3777.cpp:157: undefined reference to `Matrica<int>::Matrica(int, int, char)'\nbs_test_3777.cpp:160: undefined reference to `Matrica<int>::Matrica(int, int, char)'\nbs_test_3777.cpp:163: undefined reference to `Matrica<int>::operator=(Matrica<int>&&)'\nbs_test_3777.cpp:170: undefined reference to `Matrica<int>::operator=(Matrica<int>&&)'\nbs_test_3777.cpp:177: undefined reference to `Matrica<int>::operator=(Matrica<int>&&)'\n/tmp/ccmYcWvT.o: In function `Matrica<int>::~Matrica()':\nbs_test_3777.cpp:38: undefined reference to `Matrica<int>::DeAlocirajMemoriju(int**, int)'\n/tmp/ccmYcWvT.o: In function `operator*(Matrica<int> const&, Matrica<int> const&)':\nbs_test_3777.cpp:81: undefined reference to `Matrica<int>::Matrica(int, int, char)'\n/tmp/ccmYcWvT.o: In function `operator*(Matrica<int> const&, double)':\nbs_test_3777.cpp:121: undefined reference to `Matrica<int>::Matrica(int, int, char)'\n/tmp/ccmYcWvT.o: In function `operator*(double, Matrica<int> const&)':\nbs_test_3777.cpp:114: undefined reference to `Matrica<int>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3778": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3778.cpp: In function ‘int main()’:\nbs_test_3778.cpp:165:2: error: no match for ‘operator+=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’)\n a+=b;\n ~^~~\nbs_test_3778.cpp:166:2: error: no match for ‘operator-=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’)\n b-=a;\n ~^~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 8,
+                        "col": "2",
+                        "message": "no match for 'operator+=' (operand types are 'Matrica<double>' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3778.cpp:165:2: error: no match for ‘operator+=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’) a+=b; ~^~~",
+                        "code": "a+=b;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "2",
+                        "message": "no match for 'operator-=' (operand types are 'Matrica<double>' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3778.cpp:166:2: error: no match for ‘operator-=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’) b-=a; ~^~~",
+                        "code": "b-=a;"
+                    }
+                ]
+            }
+        },
+        "3779": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3779.cpp: In function ‘int main()’:\nbs_test_3779.cpp:166:2: error: no match for ‘operator*=’ (operand types are ‘Matrica<double>’ and ‘int’)\n b*=10;\n ~^~~~\nbs_test_3779.cpp:127:10: note: candidate: Matrica<TipEl> Matrica<TipEl>::operator*=(const Matrica<TipEl>&) [with TipEl = double]\n  Matrica operator *=(const Matrica &m2) {\n          ^~~~~~~~\nbs_test_3779.cpp:127:10: note:   no known conversion for argument 1 from ‘int’ to ‘const Matrica<double>&’",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "2",
+                        "message": "no match for 'operator*=' (operand types are 'Matrica<double>' and 'int')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3779.cpp:166:2: error: no match for ‘operator*=’ (operand types are ‘Matrica<double>’ and ‘int’) b*=10; ~^~~~",
+                        "code": "b*=10;"
+                    }
+                ]
+            }
+        },
+        "3780": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3780.cpp: In function ‘int main()’:\nbs_test_3780.cpp:166:7: error: no match for ‘operator+=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’)\n a = b += c;\n     ~~^~~~\nbs_test_3780.cpp:167:3: error: no match for ‘operator-=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’)\n b -= a * c;\n ~~^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "7",
+                        "message": "no match for 'operator+=' (operand types are 'Matrica<double>' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3780.cpp:166:7: error: no match for ‘operator+=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’) a = b += c;     ~~^~~~",
+                        "code": "a = b += c;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 10,
+                        "col": "3",
+                        "message": "no match for 'operator-=' (operand types are 'Matrica<double>' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3780.cpp:167:3: error: no match for ‘operator-=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’) b -= a * c; ~~^~~~~~~~",
+                        "code": "b -= a * c;"
+                    }
+                ]
+            }
+        },
+        "3781": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccuFGtY1.o: In function `main':\nbs_test_3781.cpp:160: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3781.cpp:160: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3781.cpp:165: undefined reference to `Matrica<double>::Matrica(Matrica<double> const&)'\n/tmp/ccuFGtY1.o: In function `Matrica<double>::~Matrica()':\nbs_test_3781.cpp:38: undefined reference to `Matrica<double>::DeAlocirajMemoriju(double**, int)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3782": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3782.cpp: In function ‘int main()’:\nbs_test_3782.cpp:160:27: error: no matching function for call to ‘std::__cxx11::basic_string<char>::basic_string(Matrica<double>&)’\n std::cout << std::string(a);\n                           ^\nIn file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,\n                 from bs_test_3782.cpp:1:\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:549:9: note: candidate: template<class _InputIterator, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&)\n         basic_string(_InputIterator __beg, _InputIterator __end,\n         ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:549:9: note:   template argument deduction/substitution failed:\nbs_test_3782.cpp:160:27: note:   candidate expects 3 arguments, 1 provided\n std::cout << std::string(a);\n                           ^\nIn file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,\n                 from bs_test_3782.cpp:1:\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:511:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(basic_string&& __str, const _Alloc& __a)\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:511:7: note:   candidate expects 2 arguments, 1 provided\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:507:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(const basic_string& __str, const _Alloc& __a)\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:507:7: note:   candidate expects 2 arguments, 1 provided\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:503:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::initializer_list<_Tp>, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:503:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘std::initializer_list<char>’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:476:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(basic_string&& __str) noexcept\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:476:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘std::__cxx11::basic_string<char>&&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:464:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, _CharT, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]\n       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:464:7: note:   candidate expects 3 arguments, 1 provided\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:454:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:454:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const char*’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:444:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]\n       basic_string(const _CharT* __s, size_type __n,\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:444:7: note:   candidate expects 3 arguments, 1 provided\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:426:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]\n       basic_string(const basic_string& __str, size_type __pos,\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:426:7: note:   candidate expects 4 arguments, 1 provided\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:410:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::size_type = long unsigned int]\n       basic_string(const basic_string& __str, size_type __pos,\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:410:7: note:   candidate expects 3 arguments, 1 provided\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:397:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(const basic_string& __str)\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:397:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const std::__cxx11::basic_string<char>&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:389:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string(const _Alloc& __a) _GLIBCXX_NOEXCEPT\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:389:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const std::allocator<char>&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:380:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string() [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       basic_string()\n       ^~~~~~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:380:7: note:   candidate expects 0 arguments, 1 provided",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "27",
+                        "message": "no matching function for call to 'std::__cxx11::basic_string<char>::basic_string(Matrica<double>&)'",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3782.cpp:160:27: error: no matching function for call to ‘std::__cxx11::basic_string<char>::basic_string(Matrica<double>&)’ std::cout << std::string(a);                           ^In file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,                 from /tmp/buildservice/bs_3684/bs_test_3782.cpp:1:",
+                        "code": "std::cout << std::string(a);"
+                    }
+                ]
+            }
+        },
+        "3783": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3783.cpp: In function ‘int main()’:\nbs_test_3783.cpp:161:5: error: no match for ‘operator=’ (operand types are ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ and ‘Matrica<double>’)\n s = a;\n     ^\nIn file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,\n                 from bs_test_3783.cpp:1:\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(const basic_string& __str)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:565:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const std::__cxx11::basic_string<char>&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(const _CharT* __s)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:589:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const char*’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(_CharT __c)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:600:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘char’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(basic_string&& __str)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:618:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘std::__cxx11::basic_string<char>&&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(initializer_list<_CharT> __l)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:672:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘std::initializer_list<char>’\nbs_test_3783.cpp:164:3: error: no match for ‘operator=’ (operand types are ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ and ‘Matrica<double>’)\n s=a;\n   ^\nIn file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,\n                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,\n                 from bs_test_3783.cpp:1:\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(const basic_string& __str)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:565:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const std::__cxx11::basic_string<char>&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(const _CharT* __s)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:589:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘const char*’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(_CharT __c)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:600:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘char’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(basic_string&& __str)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:618:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘std::__cxx11::basic_string<char>&&’\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]\n       operator=(initializer_list<_CharT> __l)\n       ^~~~~~~~\n/opt/gcc-6.2.0/include/c++/6.2.0/bits/basic_string.h:672:7: note:   no known conversion for argument 1 from ‘Matrica<double>’ to ‘std::initializer_list<char>’",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "5",
+                        "message": "no match for 'operator=' (operand types are 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3783.cpp:161:5: error: no match for ‘operator=’ (operand types are ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ and ‘Matrica<double>’) s = a;     ^In file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,                 from /tmp/buildservice/bs_3684/bs_test_3783.cpp:1:",
+                        "code": "s = a;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 7,
+                        "col": "3",
+                        "message": "no match for 'operator=' (operand types are 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3783.cpp:164:3: error: no match for ‘operator=’ (operand types are ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’ and ‘Matrica<double>’) s=a;   ^In file included from /opt/gcc-6.2.0/include/c++/6.2.0/string:52:0,                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/locale_classes.h:40,                 from /opt/gcc-6.2.0/include/c++/6.2.0/bits/ios_base.h:41,                 from /opt/gcc-6.2.0/include/c++/6.2.0/ios:42,                 from /opt/gcc-6.2.0/include/c++/6.2.0/ostream:38,                 from /opt/gcc-6.2.0/include/c++/6.2.0/iostream:39,                 from /tmp/buildservice/bs_3684/bs_test_3783.cpp:1:",
+                        "code": "s=a;"
+                    }
+                ]
+            }
+        },
+        "3784": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/cczOTS1x.o: In function `main':\nbs_test_3784.cpp:157: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3784.cpp:158: undefined reference to `Matrica<double>::Matrica(int, int, char)'\n/tmp/cczOTS1x.o: In function `Matrica<double>::~Matrica()':\nbs_test_3784.cpp:38: undefined reference to `Matrica<double>::DeAlocirajMemoriju(double**, int)'\n/tmp/cczOTS1x.o: In function `operator+(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3784.cpp:48: undefined reference to `Matrica<double>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3785": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3785.cpp: In function ‘int main()’:\nbs_test_3785.cpp:159:2: error: no match for ‘operator-=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’)\n a-=b;\n ~^~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "2",
+                        "message": "no match for 'operator-=' (operand types are 'Matrica<double>' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3785.cpp:159:2: error: no match for ‘operator-=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’) a-=b; ~^~~",
+                        "code": "a-=b;"
+                    }
+                ]
+            }
+        },
+        "3786": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "/tmp/ccLHLATE.o: In function `main':\nbs_test_3786.cpp:157: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3786.cpp:158: undefined reference to `Matrica<double>::Matrica(int, int, char)'\nbs_test_3786.cpp:159: undefined reference to `Matrica<double>::operator=(Matrica<double>&&)'\n/tmp/ccLHLATE.o: In function `Matrica<double>::~Matrica()':\nbs_test_3786.cpp:38: undefined reference to `Matrica<double>::DeAlocirajMemoriju(double**, int)'\n/tmp/ccLHLATE.o: In function `operator-(Matrica<double> const&, Matrica<double> const&)':\nbs_test_3786.cpp:107: undefined reference to `Matrica<double>::Matrica(int, int, char)'\ncollect2: error: ld returned 1 exit status"
+            }
+        },
+        "3787": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3787.cpp: In function ‘int main()’:\nbs_test_3787.cpp:159:2: error: no match for ‘operator+=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’)\n a+=b;\n ~^~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "2",
+                        "message": "no match for 'operator+=' (operand types are 'Matrica<double>' and 'Matrica<double>')",
+                        "output": "/tmp/buildservice/bs_3684/bs_test_3787.cpp:159:2: error: no match for ‘operator+=’ (operand types are ‘Matrica<double>’ and ‘Matrica<double>’) a+=b; ~^~~",
+                        "code": "a+=b;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1559912794
+}

@@ -1,0 +1,164 @@
+{
+    "buildhost_description": {
+        "id": "lab002c02",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In lambda function:\nmain.cpp:187:40: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if (s1->DajProsjek()==s2->DajProsjek()) return s1->DajBrojIndeksa()<s2->DajBrojIndeksa();\n                                        ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "187",
+                "col": "40",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "\/tmp\/buildservice\/bs_2458\/main.cpp:187:40: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if (s1->DajProsjek()==s2->DajProsjek()) return s1->DajBrojIndeksa()<s2->DajBrojIndeksa();                                        ^",
+                "code": "if (s1->DajProsjek()==s2->DajProsjek()) return s1->DajBrojIndeksa()<s2->DajBrojIndeksa();"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "71234": {
+            "status": 1,
+            "run_result": {
+                "output": "Student bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nStudent sa zadanim brojem indeksa vec postoji\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3807": {
+            "status": 1,
+            "run_result": {
+                "output": "Student master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 9.5.\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 8.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 8.\nStudent sa zadanim brojem indeksa ne postoji\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3808": {
+            "status": 1,
+            "run_result": {
+                "output": "Student master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent sa zadanim brojem indeksa ne postoji\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3809": {
+            "status": 1,
+            "run_result": {
+                "output": "KOPIRAJUCI KONSTRUKTOR\nOriginal prije promjene\n---------------------\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nKopija prije promjene\n---------------------\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nOriginal poslije promjene\n---------------------\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nKopija poslije promjene\n---------------------\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nStudent bachelor studija Djuro Djuric, sa brojem indeksa 9876,\nima prosjek 5.\nPOMIJERAJUCI KONSTRUKTOR\nOriginal prije promjene\n---------------------\nKopija prije promjene\n---------------------\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nOriginal poslije promjene\n---------------------\nKopija poslije promjene\n---------------------\nStudent bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nStudent bachelor studija Djuro Djuric, sa brojem indeksa 9999,\nima prosjek 5.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3810": {
+            "status": 1,
+            "run_result": {
+                "output": "Student bachelor studija Pero Peric, sa brojem indeksa 1243,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\nStudent bachelor studija Meho Mehic, sa brojem indeksa 3412,\nima prosjek 5.\nStudent master studija Ibro Ibric, sa brojem indeksa 3124,\nzavrsio bachelor studij godine 2015,ima prosjek 5.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3816": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3816.cpp: In function \u2018int main()\u2019:\nbs_test_3816.cpp:220:8: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019\n   f1 = f2;  \/\/dodjela manjeg ve\u0107em, sadai f1 i f2 imaju 2 elementa\n        ^~\nbs_test_3816.cpp:96:7: note: \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019 is implicitly declared as deleted because \u2018Fakultet\u2019 declares a move constructor or move assignment operator\n class Fakultet\n       ^~~~~~~~\nbs_test_3816.cpp:238:8: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019\n   f2 = f1;  \/\/f2 sada opet ima 2 elementa\n        ^~\nbs_test_3816.cpp:266:20: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019\n   f3 = std::move(f4);  \/\/dodjela manjeg ve\u0107em, sadai f3 i f4 imaju 2 elementa\n                    ^\nbs_test_3816.cpp:273:20: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019\n   f3 = std::move(f4);  \/\/f3 je prazno\n                    ^",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 9,
+                        "col": "8",
+                        "message": "use of deleted function 'Fakultet& Fakultet::operator=(const Fakultet&)'",
+                        "output": "\/tmp\/buildservice\/bs_2458\/bs_test_3816.cpp:220:8: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019   f1 = f2;  \/\/dodjela manjeg ve\u0107em, sadai f1 i f2 imaju 2 elementa        ^~",
+                        "code": "f1 = f2;  \/\/dodjela manjeg ve\u0107em, sadai f1 i f2 imaju 2 elementa"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 27,
+                        "col": "8",
+                        "message": "use of deleted function 'Fakultet& Fakultet::operator=(const Fakultet&)'",
+                        "output": "\/tmp\/buildservice\/bs_2458\/bs_test_3816.cpp:238:8: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019   f2 = f1;  \/\/f2 sada opet ima 2 elementa        ^~",
+                        "code": "f2 = f1;  \/\/f2 sada opet ima 2 elementa"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 55,
+                        "col": "20",
+                        "message": "use of deleted function 'Fakultet& Fakultet::operator=(const Fakultet&)'",
+                        "output": "\/tmp\/buildservice\/bs_2458\/bs_test_3816.cpp:266:20: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019   f3 = std::move(f4);  \/\/dodjela manjeg ve\u0107em, sadai f3 i f4 imaju 2 elementa                    ^",
+                        "code": "f3 = std::move(f4);  \/\/dodjela manjeg ve\u0107em, sadai f3 i f4 imaju 2 elementa"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 62,
+                        "col": "20",
+                        "message": "use of deleted function 'Fakultet& Fakultet::operator=(const Fakultet&)'",
+                        "output": "\/tmp\/buildservice\/bs_2458\/bs_test_3816.cpp:273:20: error: use of deleted function \u2018Fakultet& Fakultet::operator=(const Fakultet&)\u2019   f3 = std::move(f4);  \/\/f3 je prazno                    ^",
+                        "code": "f3 = std::move(f4);  \/\/f3 je prazno"
+                    }
+                ]
+            }
+        },
+        "3819": {
+            "status": 1,
+            "run_result": {
+                "output": "Nestalo memorije\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1591606474
+}

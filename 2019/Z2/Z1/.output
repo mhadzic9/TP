@@ -1,0 +1,159 @@
+Igra je pocela, unesite dimenzije matrica (dva broja): 
+Unesite broj robota: 
+Naida unesi pocetne i krajnje koordinate 1. robota: 
+Naida unesi pocetne i krajnje koordinate 2. robota: 
+Naida unesi pocetne i krajnje koordinate 3. robota: 
+Alina unesi pocetne i krajnje koordinate 1. robota: 
+Alina unesi pocetne i krajnje koordinate 2. robota: 
+Alina unesi pocetne i krajnje koordinate 3. robota: 
+Uspjesno ste unijeli pozicije robota. Sada moze poceti pogadjanje.
+- - - - - 
+- 1 - - - 
+3 3 3 - - 
+- - - 2 - 
+- - - 2 - 
+
+
+1 - - - - 
+- - - - - 
+- - 3 - - 
+- - 3 - 2 
+- - 3 - 2 
+Naida unesi koordinate koje zelis gadjati:
+- - - - - 
+- 1 - - - 
+3 3 3 - - 
+- - - 2 - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Promasaj
+1 - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - 2 
+- - 3 - 2 
+Alina unesi koordinate koje zelis gadjati: 
+1 - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - 2 
+- - 3 - 2 
+Alina unesi koordinate koje zelis gadjati: 
+Pogodak
+- - - - - 
+- 1 - - - 
+3 3 X - - 
+- - - 2 - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Unisteno
+X - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - 2 
+- - 3 - 2 
+Alina unesi koordinate koje zelis gadjati: 
+Pogresne koordinate gdje zelite gadjati
+Naida unesi koordinate koje zelis gadjati:
+Vec ste gadjali ovo polje
+Alina unesi koordinate koje zelis gadjati: 
+Pogodak
+- - - - - 
+- 1 - - - 
+X 3 X - - 
+- - - 2 - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Pogodak
+X - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - 2 
+- - 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+X - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - 2 
+- - 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+Promasaj
+O - - - - 
+- 1 - - - 
+X 3 X - - 
+- - - 2 - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Unisteno
+X - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - X 
+- - 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+Pogodak
+O - - - - 
+- 1 - - - 
+X 3 X - - 
+- - - X - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+O - - - - 
+- 1 - - - 
+X 3 X - - 
+- - - X - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Promasaj
+X - - - - 
+- O - - - 
+- - 3 - - 
+- - 3 - X 
+O - 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+Vec ste gadjali ovo polje
+Naida unesi koordinate koje zelis gadjati:
+Vec ste gadjali ovo polje
+Alina unesi koordinate koje zelis gadjati: 
+Unisteno
+O - - - - 
+- X - - - 
+X 3 X - - 
+- - - X - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Promasaj
+X - - - - 
+- O - - - 
+- - 3 O - 
+- - 3 - X 
+O - 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+Unisteno
+O - - - - 
+- X - - - 
+X X X - - 
+- - - X - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+O - - - - 
+- X - - - 
+X X X - - 
+- - - X - 
+- - - 2 - 
+Naida unesi koordinate koje zelis gadjati:
+Promasaj
+X - - - - 
+- O - - - 
+- - 3 O - 
+- - 3 - X 
+O O 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+X - - - - 
+- O - - - 
+- - 3 O - 
+- - 3 - X 
+O O 3 - X 
+Alina unesi koordinate koje zelis gadjati: 
+Unisteno
+Alina je pobijedila. Alina ima 2 unistenih, 0 ostecenih i 1 citavih robota.

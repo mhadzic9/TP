@@ -1,0 +1,7 @@
+/rhome/m/mhadzic9/workspace/TP/Ispit1/Z1/main.cpp: In function ‘std::__cxx11::list<bool> TransformirajMatricu(Matrica&)’:
+/rhome/m/mhadzic9/workspace/TP/Ispit1/Z1/main.cpp:41:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if (Suma(x)==int(Suma(x))) {
+                                 ^
+/rhome/m/mhadzic9/workspace/TP/Ispit1/Z1/main.cpp:44:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if (Suma(x)!=int(Suma(x))){
+                                 ^

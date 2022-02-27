@@ -1,0 +1,102 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:39:43: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n             if (dek.at(i)-int(dek.at(i))==0)std::cout << dek.at(i) << \" \";\n                                           ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "39",
+                "col": "43",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "\/tmp\/buildservice\/bs_508\/main.cpp:39:43: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]             if (dek.at(i)-int(dek.at(i))==0)std::cout << dek.at(i) << \" \";                                           ^",
+                "code": "if (dek.at(i)-int(dek.at(i))==0)std::cout << dek.at(i) << \" \";"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "33": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata vektora: Unesite elemente vektora: Rezultujuci dek: 4 8 100 6 225 2.65 64.00 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "34": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata vektora: Unesite elemente vektora: Problem: Element vektora negativan!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "35": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "36": {
+            "status": 1,
+            "run_result": {
+                "output": "Element vektora negativan!\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "37": {
+            "status": 1,
+            "run_result": {
+                "output": "0 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1587577802
+}

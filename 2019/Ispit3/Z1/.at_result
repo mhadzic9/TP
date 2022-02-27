@@ -1,0 +1,91 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "----- AT 1-----\n1 2\n----- AT 2-----\n3 4\n----- AT 3-----\n3 4\n----- AT 4-----\n3 4\n----- AT 5-----\n4.47214",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "----- AT 6-----\n(1,2)\n----- AT 7-----\n(1,2) (3,4)\n----- AT 8-----\nInspektori: -5 5\n----- AT 9-----\n16\n----- AT 10-----\n24",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "----- AT 11-----\nKonstruktor: 1 2 3\nMetoda Postavi: 3 4 5\n----- AT 12-----\nNeispravan poluprecnik\nNeispravan poluprecnik\n----- AT 13-----\nKonstruktor: 1 2 3\nMetoda Postavi: 3 4 5\n----- AT 14-----\nNeispravan poluprecnik\nNeispravan poluprecnik\n----- AT 15-----\nKonstruktor: {(1,2),2.82843}\nMetoda Postavi: {(3,4),2.82843}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "----- AT 16-----\nNije bacen izuzetak - sto je OK!\nNije bacen izuzetak - sto je OK!\n----- AT 17-----\n3 2 3 2 4\n----- AT 18-----\n18.8496 28.2743\n----- AT 19-----\n4 5 3\n8 9 3\n----- AT 20-----\n1 2 6\n1 2 12\nNeispravno skaliranje\nNeispravno skaliranje",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "----- AT 21-----\n1 2 6\nNeispravno skaliranje\n----- AT 22-----\n{(1,2),3} {(1,2),4} {(1,2),4}\n{(1,2),4} {(1,2),4} {(1,2),5}\n----- AT 23-----\n{(1,2),3}\n----- AT 24-----\n(1,2) 1 2 3 18.8496 28.2743\n----- AT 25-----\n(3,5) 4 2\n(0,-5)\n{(3,5),5} {(3,4),2} {(3,5),10.4403}\n{(0,-5),3} (0,-5) {(-5,1),8.94427}\n(0,-5) 3\n4 2\n56.1985 251.327\n{(3,0),3} {(0,-5),9} {(0,-5),9}\n{(4,-3),1}\n{(-5,1),17.8885}\n{(0,-5),5} {(0,-5),3} {(0,-5),5}\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 2,
+    "time": 1593419387
+}

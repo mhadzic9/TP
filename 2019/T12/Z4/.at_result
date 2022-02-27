@@ -1,0 +1,195 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘bool operator==(const Kompleksni&, const Kompleksni&)’:\nmain.cpp:43:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   return a.re==b.re && a.im==b.im;\n                  ^~\nmain.cpp:43:32: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   return a.re==b.re && a.im==b.im;\n                                ^~\nmain.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Kompleksni&)’:\nmain.cpp:77:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if (a.re!=0 && a.im>0 && a.im!=1) tok << a.re << \"+\" << a.im << \"i\";\n             ^\nmain.cpp:77:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if (a.re!=0 && a.im>0 && a.im!=1) tok << a.re << \"+\" << a.im << \"i\";\n                                  ^\nmain.cpp:78:28: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";\n                            ^\nmain.cpp:78:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";\n                                       ^\nmain.cpp:78:51: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";\n                                                   ^\nmain.cpp:79:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im==1 && a.re!=0) tok << a.re << \"+i\";\n                  ^\nmain.cpp:79:29: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im==1 && a.re!=0) tok << a.re << \"+i\";\n                             ^\nmain.cpp:80:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im==-1 && a.re!=0) tok << a.re << \"-i\";\n                   ^\nmain.cpp:80:30: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.im==-1 && a.re!=0) tok << a.re << \"-i\";\n                              ^\nmain.cpp:81:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   else if (a.re==0) {\n                  ^\nmain.cpp:82:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n    if (a.im==1) tok << \"i\";\n              ^\nmain.cpp:83:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n    else if (a.im==-1) tok << \"-i\";\n                    ^\nmain.cpp:84:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n    else if (a.im==0) tok << a.re;\n                   ^\nmain.cpp:86:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   } else if (a.im==0) tok << a.re;\n                    ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "43",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:43:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   return a.re==b.re && a.im==b.im;                  ^~",
+                "code": "return a.re==b.re && a.im==b.im;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "43",
+                "col": "32",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:43:32: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   return a.re==b.re && a.im==b.im;                                ^~",
+                "code": "return a.re==b.re && a.im==b.im;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "77",
+                "col": "13",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:77:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if (a.re!=0 && a.im>0 && a.im!=1) tok << a.re << \"+\" << a.im << \"i\";             ^",
+                "code": "if (a.re!=0 && a.im>0 && a.im!=1) tok << a.re << \"+\" << a.im << \"i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "77",
+                "col": "34",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:77:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if (a.re!=0 && a.im>0 && a.im!=1) tok << a.re << \"+\" << a.im << \"i\";                                  ^",
+                "code": "if (a.re!=0 && a.im>0 && a.im!=1) tok << a.re << \"+\" << a.im << \"i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "78",
+                "col": "28",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:78:28: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";                            ^",
+                "code": "else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "78",
+                "col": "39",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:78:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";                                       ^",
+                "code": "else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "78",
+                "col": "51",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:78:51: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";                                                   ^",
+                "code": "else if (a.im<0 && a.im!=1 && a.re!=0 && a.im!=-1) tok << a.re << a.im << \"i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "79",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:79:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im==1 && a.re!=0) tok << a.re << \"+i\";                  ^",
+                "code": "else if (a.im==1 && a.re!=0) tok << a.re << \"+i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "79",
+                "col": "29",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:79:29: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im==1 && a.re!=0) tok << a.re << \"+i\";                             ^",
+                "code": "else if (a.im==1 && a.re!=0) tok << a.re << \"+i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "80",
+                "col": "19",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:80:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im==-1 && a.re!=0) tok << a.re << \"-i\";                   ^",
+                "code": "else if (a.im==-1 && a.re!=0) tok << a.re << \"-i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "80",
+                "col": "30",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:80:30: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.im==-1 && a.re!=0) tok << a.re << \"-i\";                              ^",
+                "code": "else if (a.im==-1 && a.re!=0) tok << a.re << \"-i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "81",
+                "col": "18",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:81:18: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   else if (a.re==0) {                  ^",
+                "code": "else if (a.re==0) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "82",
+                "col": "14",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:82:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]    if (a.im==1) tok << \"i\";              ^",
+                "code": "if (a.im==1) tok << \"i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "83",
+                "col": "20",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:83:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]    else if (a.im==-1) tok << \"-i\";                    ^",
+                "code": "else if (a.im==-1) tok << \"-i\";"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "84",
+                "col": "19",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:84:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]    else if (a.im==0) tok << a.re;                   ^",
+                "code": "else if (a.im==0) tok << a.re;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "86",
+                "col": "20",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8706/main.cpp:86:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   } else if (a.im==0) tok << a.re;                    ^",
+                "code": "} else if (a.im==0) tok << a.re;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3765": {
+            "status": 1,
+            "run_result": {
+                "output": "0 1 5 -1 -5 i -i 5i -5i\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3766": {
+            "status": 1,
+            "run_result": {
+                "output": "2+i 2+5i 2-i 2-5i -1+i -1+3i -1-i -1-5i\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1590745502
+}

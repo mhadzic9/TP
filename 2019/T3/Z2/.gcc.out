@@ -1,0 +1,4 @@
+/rhome/m/mhadzic9/workspace/TP/T3/Z2/main.cpp: In function ‘int main()’:
+/rhome/m/mhadzic9/workspace/TP/T3/Z2/main.cpp:59:13: error: ‘else’ without a previous ‘if’
+             else if (i==v3.size()-1) {
+             ^~~~

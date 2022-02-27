@@ -1,0 +1,11 @@
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp: In instantiation of ‘Cvor<TipElemenata>* KreirajPovezanuListu(TipElemenata) [with TipElemenata = double]’:
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp:21:59:   required from here
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp:34:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if(k==zavrsni) break;
+            ~^~~~~~~~~
+/tmp/ccbgmeHq.o: In function `main':
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp:22: undefined reference to `double SumaElemenata<double>(Cvor<double>*)'
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp:22: undefined reference to `int BrojElemenata<double>(Cvor<double>*)'
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp:22: undefined reference to `int BrojVeciOd<double>(Cvor<double>*, double)'
+/rhome/m/mhadzic9/workspace/TP/T8/Z6/main.cpp:24: undefined reference to `void UnistiListu<double>(Cvor<double>*)'
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,4 @@
+/rhome/m/mhadzic9/workspace/TP/ZSR3/Z7/main.cpp: In function ‘double Razlomak(std::vector<double>)’:
+/rhome/m/mhadzic9/workspace/TP/ZSR3/Z7/main.cpp:6:12: warning: unused variable ‘suma’ [-Wunused-variable]
+     double suma=0,rezultat=0;
+            ^~~~

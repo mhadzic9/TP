@@ -1,0 +1,284 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In lambda function:\nmain.cpp:67:23: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n             if(Vd[i]==x) {\n                       ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "67",
+                "col": "23",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_42/main.cpp:67:23: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]             if(Vd[i]==x) {                       ^",
+                "code": "if(Vd[i]==x) {"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "53": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 1,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.22834"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==22853== Memcheck, a memory error detector\n==22853== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==22853== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==22853== Command: bs_test_53\n==22853== Parent PID: 22852\n==22853== \n==22853== Invalid read of size 4\n==22853==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_53.cpp:66)\n==22853==    by 0x401C74: main (bs_test_53.cpp:118)\n==22853==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==22853== \n==22853== Invalid read of size 2\n==22853==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_53.cpp:66)\n==22853==    by 0x401C74: main (bs_test_53.cpp:118)\n==22853==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==22853== \n==22853== \n==22853== Process terminating with default action of signal 11 (SIGSEGV)\n==22853==  Access not within mapped region at address 0x29\n==22853==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_53.cpp:66)\n==22853==    by 0x401C74: main (bs_test_53.cpp:118)\n==22853==  If you believe this happened as a result of a stack\n==22853==  overflow in your program's main thread (unlikely but\n==22853==  possible), you can try to increase the size of the\n==22853==  main thread stack using the --main-stacksize= flag.\n==22853==  The main thread stack size used in this run was 10485760.\n==22853== \n==22853== HEAP SUMMARY:\n==22853==     in use at exit: 288 bytes in 5 blocks\n==22853==   total heap usage: 15 allocs, 10 frees, 73,104 bytes allocated\n==22853== \n==22853== LEAK SUMMARY:\n==22853==    definitely lost: 0 bytes in 0 blocks\n==22853==    indirectly lost: 0 bytes in 0 blocks\n==22853==      possibly lost: 0 bytes in 0 blocks\n==22853==    still reachable: 288 bytes in 5 blocks\n==22853==         suppressed: 0 bytes in 0 blocks\n==22853== Reachable blocks (those to which a pointer was found) are not shown.\n==22853== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==22853== \n==22853== For counts of detected and suppressed errors, rerun with: -v\n==22853== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_53.cpp:66)\n    by 0x401C74: main (bs_test_53.cpp:118)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "54": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.22871"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==22882== Memcheck, a memory error detector\n==22882== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==22882== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==22882== Command: bs_test_54\n==22882== Parent PID: 22881\n==22882== \n==22882== Invalid read of size 4\n==22882==    at 0x40160A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_54.cpp:66)\n==22882==    by 0x40195C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_54.cpp:93)\n==22882==    by 0x401CCE: main (bs_test_54.cpp:119)\n==22882==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==22882== \n==22882== Invalid read of size 2\n==22882==    at 0x40160A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_54.cpp:66)\n==22882==    by 0x40195C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_54.cpp:93)\n==22882==    by 0x401CCE: main (bs_test_54.cpp:119)\n==22882==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==22882== \n==22882== \n==22882== Process terminating with default action of signal 11 (SIGSEGV)\n==22882==  Access not within mapped region at address 0x29\n==22882==    at 0x40160A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_54.cpp:66)\n==22882==    by 0x40195C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_54.cpp:93)\n==22882==    by 0x401CCE: main (bs_test_54.cpp:119)\n==22882==  If you believe this happened as a result of a stack\n==22882==  overflow in your program's main thread (unlikely but\n==22882==  possible), you can try to increase the size of the\n==22882==  main thread stack using the --main-stacksize= flag.\n==22882==  The main thread stack size used in this run was 10485760.\n==22882== \n==22882== HEAP SUMMARY:\n==22882==     in use at exit: 864 bytes in 6 blocks\n==22882==   total heap usage: 23 allocs, 17 frees, 74,048 bytes allocated\n==22882== \n==22882== LEAK SUMMARY:\n==22882==    definitely lost: 0 bytes in 0 blocks\n==22882==    indirectly lost: 0 bytes in 0 blocks\n==22882==      possibly lost: 0 bytes in 0 blocks\n==22882==    still reachable: 864 bytes in 6 blocks\n==22882==         suppressed: 0 bytes in 0 blocks\n==22882== Reachable blocks (those to which a pointer was found) are not shown.\n==22882== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==22882== \n==22882== For counts of detected and suppressed errors, rerun with: -v\n==22882== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x40160A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_54.cpp:66)\n    by 0x40195C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_54.cpp:93)\n    by 0x401CCE: main (bs_test_54.cpp:119)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "55": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.22900"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==22911== Memcheck, a memory error detector\n==22911== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==22911== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==22911== Command: bs_test_55\n==22911== Parent PID: 22910\n==22911== \n==22911== Invalid read of size 4\n==22911==    at 0x40169A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_55.cpp:66)\n==22911==    by 0x401D5A: main (bs_test_55.cpp:118)\n==22911==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==22911== \n==22911== Invalid read of size 2\n==22911==    at 0x40169A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_55.cpp:66)\n==22911==    by 0x401D5A: main (bs_test_55.cpp:118)\n==22911==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==22911== \n==22911== \n==22911== Process terminating with default action of signal 11 (SIGSEGV)\n==22911==  Access not within mapped region at address 0x29\n==22911==    at 0x40169A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_55.cpp:66)\n==22911==    by 0x401D5A: main (bs_test_55.cpp:118)\n==22911==  If you believe this happened as a result of a stack\n==22911==  overflow in your program's main thread (unlikely but\n==22911==  possible), you can try to increase the size of the\n==22911==  main thread stack using the --main-stacksize= flag.\n==22911==  The main thread stack size used in this run was 10485760.\n==22911== \n==22911== HEAP SUMMARY:\n==22911==     in use at exit: 288 bytes in 5 blocks\n==22911==   total heap usage: 15 allocs, 10 frees, 73,104 bytes allocated\n==22911== \n==22911== LEAK SUMMARY:\n==22911==    definitely lost: 0 bytes in 0 blocks\n==22911==    indirectly lost: 0 bytes in 0 blocks\n==22911==      possibly lost: 0 bytes in 0 blocks\n==22911==    still reachable: 288 bytes in 5 blocks\n==22911==         suppressed: 0 bytes in 0 blocks\n==22911== Reachable blocks (those to which a pointer was found) are not shown.\n==22911== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==22911== \n==22911== For counts of detected and suppressed errors, rerun with: -v\n==22911== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x40169A: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_55.cpp:66)\n    by 0x401D5A: main (bs_test_55.cpp:118)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "56": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.22929"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==22940== Memcheck, a memory error detector\n==22940== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==22940== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==22940== Command: bs_test_56\n==22940== Parent PID: 22939\n==22940== \n==22940== Invalid read of size 4\n==22940==    at 0x4016EA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_56.cpp:66)\n==22940==    by 0x401A3C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_56.cpp:93)\n==22940==    by 0x401DAE: main (bs_test_56.cpp:119)\n==22940==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==22940== \n==22940== Invalid read of size 2\n==22940==    at 0x4016EA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_56.cpp:66)\n==22940==    by 0x401A3C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_56.cpp:93)\n==22940==    by 0x401DAE: main (bs_test_56.cpp:119)\n==22940==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==22940== \n==22940== \n==22940== Process terminating with default action of signal 11 (SIGSEGV)\n==22940==  Access not within mapped region at address 0x29\n==22940==    at 0x4016EA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_56.cpp:66)\n==22940==    by 0x401A3C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_56.cpp:93)\n==22940==    by 0x401DAE: main (bs_test_56.cpp:119)\n==22940==  If you believe this happened as a result of a stack\n==22940==  overflow in your program's main thread (unlikely but\n==22940==  possible), you can try to increase the size of the\n==22940==  main thread stack using the --main-stacksize= flag.\n==22940==  The main thread stack size used in this run was 10485760.\n==22940== \n==22940== HEAP SUMMARY:\n==22940==     in use at exit: 864 bytes in 6 blocks\n==22940==   total heap usage: 23 allocs, 17 frees, 74,048 bytes allocated\n==22940== \n==22940== LEAK SUMMARY:\n==22940==    definitely lost: 0 bytes in 0 blocks\n==22940==    indirectly lost: 0 bytes in 0 blocks\n==22940==      possibly lost: 0 bytes in 0 blocks\n==22940==    still reachable: 864 bytes in 6 blocks\n==22940==         suppressed: 0 bytes in 0 blocks\n==22940== Reachable blocks (those to which a pointer was found) are not shown.\n==22940== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==22940== \n==22940== For counts of detected and suppressed errors, rerun with: -v\n==22940== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x4016EA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_56.cpp:66)\n    by 0x401A3C: BaricentricnaInterpolacija(double (*)(double), double, double, double, int) (bs_test_56.cpp:93)\n    by 0x401DAE: main (bs_test_56.cpp:119)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "57": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.22958"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==22969== Memcheck, a memory error detector\n==22969== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==22969== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==22969== Command: bs_test_57\n==22969== Parent PID: 22968\n==22969== \n==22969== Invalid read of size 4\n==22969==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_57.cpp:66)\n==22969==    by 0x401B55: _main() (bs_test_57.cpp:109)\n==22969==    by 0x401C20: main (bs_test_57.cpp:118)\n==22969==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==22969== \n==22969== Invalid read of size 2\n==22969==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_57.cpp:66)\n==22969==    by 0x401B55: _main() (bs_test_57.cpp:109)\n==22969==    by 0x401C20: main (bs_test_57.cpp:118)\n==22969==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==22969== \n==22969== \n==22969== Process terminating with default action of signal 11 (SIGSEGV)\n==22969==  Access not within mapped region at address 0x29\n==22969==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_57.cpp:66)\n==22969==    by 0x401B55: _main() (bs_test_57.cpp:109)\n==22969==    by 0x401C20: main (bs_test_57.cpp:118)\n==22969==  If you believe this happened as a result of a stack\n==22969==  overflow in your program's main thread (unlikely but\n==22969==  possible), you can try to increase the size of the\n==22969==  main thread stack using the --main-stacksize= flag.\n==22969==  The main thread stack size used in this run was 10485760.\n==22969== \n==22969== HEAP SUMMARY:\n==22969==     in use at exit: 416 bytes in 6 blocks\n==22969==   total heap usage: 19 allocs, 13 frees, 73,344 bytes allocated\n==22969== \n==22969== LEAK SUMMARY:\n==22969==    definitely lost: 0 bytes in 0 blocks\n==22969==    indirectly lost: 0 bytes in 0 blocks\n==22969==      possibly lost: 0 bytes in 0 blocks\n==22969==    still reachable: 416 bytes in 6 blocks\n==22969==         suppressed: 0 bytes in 0 blocks\n==22969== Reachable blocks (those to which a pointer was found) are not shown.\n==22969== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==22969== \n==22969== For counts of detected and suppressed errors, rerun with: -v\n==22969== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_57.cpp:66)\n    by 0x401B55: _main() (bs_test_57.cpp:109)\n    by 0x401C20: main (bs_test_57.cpp:118)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "58": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.22987"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==22998== Memcheck, a memory error detector\n==22998== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==22998== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==22998== Command: bs_test_58\n==22998== Parent PID: 22997\n==22998== \n==22998== Invalid read of size 4\n==22998==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_58.cpp:66)\n==22998==    by 0x401B55: _main() (bs_test_58.cpp:109)\n==22998==    by 0x401C20: main (bs_test_58.cpp:118)\n==22998==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==22998== \n==22998== Invalid read of size 2\n==22998==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_58.cpp:66)\n==22998==    by 0x401B55: _main() (bs_test_58.cpp:109)\n==22998==    by 0x401C20: main (bs_test_58.cpp:118)\n==22998==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==22998== \n==22998== \n==22998== Process terminating with default action of signal 11 (SIGSEGV)\n==22998==  Access not within mapped region at address 0x29\n==22998==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_58.cpp:66)\n==22998==    by 0x401B55: _main() (bs_test_58.cpp:109)\n==22998==    by 0x401C20: main (bs_test_58.cpp:118)\n==22998==  If you believe this happened as a result of a stack\n==22998==  overflow in your program's main thread (unlikely but\n==22998==  possible), you can try to increase the size of the\n==22998==  main thread stack using the --main-stacksize= flag.\n==22998==  The main thread stack size used in this run was 10485760.\n==22998== \n==22998== HEAP SUMMARY:\n==22998==     in use at exit: 416 bytes in 6 blocks\n==22998==   total heap usage: 19 allocs, 13 frees, 73,344 bytes allocated\n==22998== \n==22998== LEAK SUMMARY:\n==22998==    definitely lost: 0 bytes in 0 blocks\n==22998==    indirectly lost: 0 bytes in 0 blocks\n==22998==      possibly lost: 0 bytes in 0 blocks\n==22998==    still reachable: 416 bytes in 6 blocks\n==22998==         suppressed: 0 bytes in 0 blocks\n==22998== Reachable blocks (those to which a pointer was found) are not shown.\n==22998== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==22998== \n==22998== For counts of detected and suppressed errors, rerun with: -v\n==22998== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_58.cpp:66)\n    by 0x401B55: _main() (bs_test_58.cpp:109)\n    by 0x401C20: main (bs_test_58.cpp:118)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "59": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_42/core.23016"
+            },
+            "debug_result": {
+                "output": "",
+                "parsed_output": [
+                    {
+                        "file": ""
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==23027== Memcheck, a memory error detector\n==23027== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==23027== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23027== Command: bs_test_59\n==23027== Parent PID: 23026\n==23027== \n==23027== Invalid read of size 4\n==23027==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_59.cpp:66)\n==23027==    by 0x401B55: _main() (bs_test_59.cpp:109)\n==23027==    by 0x401C20: main (bs_test_59.cpp:119)\n==23027==  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n==23027== \n==23027== Invalid read of size 2\n==23027==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_59.cpp:66)\n==23027==    by 0x401B55: _main() (bs_test_59.cpp:109)\n==23027==    by 0x401C20: main (bs_test_59.cpp:119)\n==23027==  Address 0x28 is not stack'd, malloc'd or (recently) free'd\n==23027== \n==23027== \n==23027== Process terminating with default action of signal 11 (SIGSEGV)\n==23027==  Access not within mapped region at address 0x29\n==23027==    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_59.cpp:66)\n==23027==    by 0x401B55: _main() (bs_test_59.cpp:109)\n==23027==    by 0x401C20: main (bs_test_59.cpp:119)\n==23027==  If you believe this happened as a result of a stack\n==23027==  overflow in your program's main thread (unlikely but\n==23027==  possible), you can try to increase the size of the\n==23027==  main thread stack using the --main-stacksize= flag.\n==23027==  The main thread stack size used in this run was 10485760.\n==23027== \n==23027== HEAP SUMMARY:\n==23027==     in use at exit: 416 bytes in 6 blocks\n==23027==   total heap usage: 19 allocs, 13 frees, 73,344 bytes allocated\n==23027== \n==23027== LEAK SUMMARY:\n==23027==    definitely lost: 0 bytes in 0 blocks\n==23027==    indirectly lost: 0 bytes in 0 blocks\n==23027==      possibly lost: 0 bytes in 0 blocks\n==23027==    still reachable: 416 bytes in 6 blocks\n==23027==         suppressed: 0 bytes in 0 blocks\n==23027== Reachable blocks (those to which a pointer was found) are not shown.\n==23027== To see them, rerun with: --leak-check=full --show-leak-kinds=all\n==23027== \n==23027== For counts of detected and suppressed errors, rerun with: -v\n==23027== ERROR SUMMARY: 3 errors from 2 contexts (suppressed: 4 from 4)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 4\n    at 0x4015BA: BaricentricnaInterpolacija(std::vector<std::pair<int, double>, std::allocator<std::pair<int, double> > >, int) (bs_test_59.cpp:66)\n    by 0x401B55: _main() (bs_test_59.cpp:109)\n    by 0x401C20: main (bs_test_59.cpp:119)\n  Address 0x20 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.cpp",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "60": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_60.cpp: In function ‘int main()’:\nbs_test_60.cpp:127:51: error: no matching function for call to ‘BaricentricnaInterpolacija(std::vector<std::pair<double, double> >&, int)’\n     auto fun = BaricentricnaInterpolacija(pairs, 3);\n                                                   ^\nbs_test_60.cpp:39:30: note: candidate: std::function<double(double)> BaricentricnaInterpolacija(TipVektoraParova, int)\n std::function<double(double)>BaricentricnaInterpolacija(TipVektoraParova S,int d) {\n                              ^~~~~~~~~~~~~~~~~~~~~~~~~~\nbs_test_60.cpp:39:30: note:   no known conversion for argument 1 from ‘std::vector<std::pair<double, double> >’ to ‘TipVektoraParova {aka std::vector<std::pair<int, double> >}’\nbs_test_60.cpp:85:41: note: candidate: std::function<double(double)> BaricentricnaInterpolacija(double (*)(double), double, double, double, int)\n         std::function <double (double)> BaricentricnaInterpolacija(double fun(double),double xmin,double xmax,double dx,int d) {\n                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~\nbs_test_60.cpp:85:41: note:   candidate expects 5 arguments, 2 provided",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 11,
+                        "col": "51",
+                        "message": "no matching function for call to 'BaricentricnaInterpolacija(std::vector<std::pair<double, double> >&, int)'",
+                        "output": "/tmp/buildservice/bs_42/bs_test_60.cpp:127:51: error: no matching function for call to ‘BaricentricnaInterpolacija(std::vector<std::pair<double, double> >&, int)’     auto fun = BaricentricnaInterpolacija(pairs, 3);                                                   ^",
+                        "code": "auto fun = BaricentricnaInterpolacija(pairs, 3);"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1558445209
+}

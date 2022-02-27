@@ -1,0 +1,31 @@
+{
+    "buildhost_description": {
+        "id": "lab002c18",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 3,
+    "compile_result": {
+        "status": 2,
+        "output": "main.cpp: In instantiation of ‘Cvor<TipElemenata>* KreirajPovezanuListu(TipElemenata) [with TipElemenata = double]’:\nmain.cpp:21:59:   required from here\nmain.cpp:34:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         if(k==zavrsni) break;\n            ~^~~~~~~~~\n/tmp/ccnVXXaW.o: In function `main':\nmain.cpp:(.text+0x6a): undefined reference to `double SumaElemenata<double>(Cvor<double>*)'\nmain.cpp:(.text+0x78): undefined reference to `int BrojElemenata<double>(Cvor<double>*)'\nmain.cpp:(.text+0x96): undefined reference to `int BrojVeciOd<double>(Cvor<double>*, double)'\nmain.cpp:(.text+0xcf): undefined reference to `void UnistiListu<double>(Cvor<double>*)'\ncollect2: error: ld returned 1 exit status",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "34",
+                "col": "13",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_8785/main.cpp:34:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         if(k==zavrsni) break;            ~^~~~~~~~~/tmp/ccnVXXaW.o: In function `main':main.cpp:(.text+0x6a): undefined reference to `double SumaElemenata<double>(Cvor<double>*)'main.cpp:(.text+0x78): undefined reference to `int BrojElemenata<double>(Cvor<double>*)'main.cpp:(.text+0x96): undefined reference to `int BrojVeciOd<double>(Cvor<double>*, double)'main.cpp:(.text+0xcf): undefined reference to `void UnistiListu<double>(Cvor<double>*)'collect2: error: ld returned 1 exit status",
+                "code": "if(k==zavrsni) break;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": [],
+    "queue_items": 0,
+    "time": 1558098789
+}

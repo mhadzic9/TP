@@ -1,0 +1,93 @@
+{
+    "buildhost_description": {
+        "id": "lab002c05",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "------ AT 1 ------\n2 12\n------ AT 2 ------\nNeispravni parametri\nNeispravni parametri\nNeispravni parametri\n------ AT 3 ------\n30 130\n------ AT 4 ------\nSanduk 2.5 Paket 3 7\n------ AT 5 ------\n2.5 23.5\nSanduk 2.5 Paket 3 7\n------ AT 6 ------\n3 13\n------ AT 7 ------\nNeispravni parametri\nNeispravni parametri",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "------ AT 8 ------\n12.5 65\n------ AT 9 ------\nBure 12.5 Barel 52.5\n------ AT 10 ------\n12.5 65\nBure 12.5 Barel 52.5\n------ AT 11 ------\nOK\n------ AT 12 ------\nKopija:\nSanduk 30 Odjeca 250 0.4\nBure 12.5 Barel 52.5\nSanduk 2.5 Paket 3 7\nBure 3 Tekucina 10\n\nOriginal:\nBure 12.5 Barel 52.5\nSanduk 2.5 Paket 3 7\nBure 3 Tekucina 10\n\n------ AT 13 ------\nKopija:\nSanduk 30 Odjeca 250 0.4\nBure 12.5 Barel 52.5\nSanduk 2.5 Paket 3 7\nBure 3 Tekucina 10\n\nOriginal:\nBure 12.5 Barel 52.5\nSanduk 2.5 Paket 3 7\nBure 3 Tekucina 10\n\n------ AT 14 ------\nKopija:\nSanduk 30 Odjeca 250 0.4\nBure 12.5 Barel 52.5\nSanduk 2.5 Paket 3 7\nBure 3 Tekucina 10\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "------ AT 15 ------\nKopija:\nSanduk 30 Odjeca 250 0.4\nBure 12.5 Barel 52.5\nSanduk 2.5 Paket 3 7\nBure 3 Tekucina 10\n\n------ AT 16 ------\n22\n------ AT 17 ------\nNeispravni parametri\n2\n------ AT 18 ------\nNeispravni parametri\n2\n------ AT 19 ------\nBure 2 Najlaksi 2.5\n------ AT 20 ------\nSanduk 1.75 Najlaksi 1 0.5\n------ AT 21 ------\n11",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_4.cpp: In function ‘int main()’:\nbs_test_4.cpp:310:31: error: passing ‘const Skladiste’ as ‘this’ argument discards qualifiers [-fpermissive]\n         s.DajBrojPreteskih(100);\n                               ^\nbs_test_4.cpp:88:9: note:   in call to ‘int Skladiste::DajBrojPreteskih(double)’\n     int DajBrojPreteskih(double broj) {\n         ^~~~~~~~~~~~~~~~\nbs_test_4.cpp:311:12: error: passing ‘const Skladiste’ as ‘this’ argument discards qualifiers [-fpermissive]\n         s[1];\n            ^\nbs_test_4.cpp:96:17: note:   in call to ‘Apstraktna& Skladiste::operator[](int)’\n     Apstraktna& operator[](int indeks) {\n                 ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 115,
+                        "col": "31",
+                        "message": "passing 'const Skladiste' as 'this' argument discards qualifiers [-fpermissive]",
+                        "output": "/tmp/buildservice/bs_9945/bs_test_4.cpp:310:31: error: passing ‘const Skladiste’ as ‘this’ argument discards qualifiers [-fpermissive]         s.DajBrojPreteskih(100);                               ^",
+                        "code": "s.DajBrojPreteskih(100);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 116,
+                        "col": "12",
+                        "message": "passing 'const Skladiste' as 'this' argument discards qualifiers [-fpermissive]",
+                        "output": "/tmp/buildservice/bs_9945/bs_test_4.cpp:311:12: error: passing ‘const Skladiste’ as ‘this’ argument discards qualifiers [-fpermissive]         s[1];            ^",
+                        "code": "s[1];"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1594733871
+}

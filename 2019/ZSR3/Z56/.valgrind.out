@@ -1,0 +1,44 @@
+==31847== Memcheck, a memory error detector
+==31847== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31847== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==31847== Command: /rhome/m/mhadzic9/workspace/TP/ZSR3/Z56/.runme
+==31847== Parent PID: 31830
+==31847== 
+==31847== 
+==31847== Process terminating with default action of signal 6 (SIGABRT): dumping core
+==31847==    at 0x561DE97: raise (raise.c:51)
+==31847==    by 0x561F800: abort (abort.c:79)
+==31847==    by 0x50CA956: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x50D0AE5: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x50D0B20: std::terminate() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x50D0D53: __cxa_throw (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x50CC85A: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x51631DE: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::at(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x1091DB: Rijeci(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:15)
+==31847==    by 0x1092F4: main (main.cpp:26)
+==31847== 
+==31847== HEAP SUMMARY:
+==31847==     in use at exit: 518 bytes in 4 blocks
+==31847==   total heap usage: 9 allocs, 5 frees, 73,478 bytes allocated
+==31847== 
+==31847== 144 bytes in 1 blocks are possibly lost in loss record 3 of 4
+==31847==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==31847==    by 0x50CF8FF: __cxa_allocate_exception (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x50F92CA: std::__throw_out_of_range_fmt(char const*, ...) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x51631DE: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::at(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==31847==    by 0x1091DB: Rijeci(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (main.cpp:15)
+==31847==    by 0x1092F4: main (main.cpp:26)
+==31847== 
+==31847== LEAK SUMMARY:
+==31847==    definitely lost: 0 bytes in 0 blocks
+==31847==    indirectly lost: 0 bytes in 0 blocks
+==31847==      possibly lost: 144 bytes in 1 blocks
+==31847==    still reachable: 374 bytes in 3 blocks
+==31847==                       of which reachable via heuristic:
+==31847==                         stdstring          : 90 bytes in 1 blocks
+==31847==         suppressed: 0 bytes in 0 blocks
+==31847== Reachable blocks (those to which a pointer was found) are not shown.
+==31847== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==31847== 
+==31847== For counts of detected and suppressed errors, rerun with: -v
+==31847== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

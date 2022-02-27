@@ -1,0 +1,11 @@
+/rhome/m/mhadzic9/workspace/TP/T12/Z6/main.cpp: In instantiation of ‘Matrica<TipEl>::Matrica(int, int, char) [with TipEl = double]’:
+/rhome/m/mhadzic9/workspace/TP/T12/Z6/main.cpp:269:30:   required from here
+/rhome/m/mhadzic9/workspace/TP/T12/Z6/main.cpp:18:7: warning: ‘Matrica<double>::ime_matrice’ will be initialized after [-Wreorder]
+  char ime_matrice;
+       ^~~~~~~~~~~
+/rhome/m/mhadzic9/workspace/TP/T12/Z6/main.cpp:17:10: warning:   ‘double** Matrica<double>::elementi’ [-Wreorder]
+  TipEl **elementi;
+          ^~~~~~~~
+/rhome/m/mhadzic9/workspace/TP/T12/Z6/main.cpp:109:1: warning:   when initialized here [-Wreorder]
+ Matrica<TipEl>::Matrica(int br_redova, int br_kolona, char ime) :
+ ^~~~~~~~~~~~~~

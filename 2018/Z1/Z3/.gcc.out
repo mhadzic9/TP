@@ -1,0 +1,5 @@
+/rhome/m/mhadzic9/workspace/TP/Z1/Z3/main.cpp: In function ‘int main()’:
+/rhome/m/mhadzic9/workspace/TP/Z1/Z3/main.cpp:52:50: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(((C.at(i).at(j)>0) && (log(C.at(i).at(j)>s)))) s=log(C.at(i).at(j));
+                                                  ^
+/rhome/m/mhadzic9/workspace/TP/Z1/Z3/main.cpp:52:50: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]

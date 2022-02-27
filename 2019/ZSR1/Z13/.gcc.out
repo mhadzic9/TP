@@ -1,0 +1,7 @@
+/rhome/m/mhadzic9/workspace/TP/ZSR1/Z13/main.cpp: In function ‘int main()’:
+/rhome/m/mhadzic9/workspace/TP/ZSR1/Z13/main.cpp:12:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+         if (x==0) break;
+                ^
+/rhome/m/mhadzic9/workspace/TP/ZSR1/Z13/main.cpp:17:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     } while (x!=0);
+                 ^

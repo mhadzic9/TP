@@ -1,0 +1,186 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘int main()’:\nmain.cpp:51:13: warning: ‘s2.Sat::sekunde’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n   sekunde --;\n             ^\nmain.cpp:82:9: note: ‘s2.Sat::sekunde’ was declared here\n  Sat s1,s2;\n         ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "51",
+                "col": "13",
+                "message": "'s2.Sat::sekunde' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_8817/main.cpp:51:13: warning: ‘s2.Sat::sekunde’ may be used uninitialized in this function [-Wmaybe-uninitialized]   sekunde --;             ^",
+                "code": "sekunde --;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3581": {
+            "status": 1,
+            "run_result": {
+                "output": "1\n0\n0\n0\n0\n0\n0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3582": {
+            "status": 6,
+            "run_result": {
+                "output": "101530\n000403",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3583": {
+            "status": 1,
+            "run_result": {
+                "output": "OK\nOK\nOK\nOK\nOK\nOK\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3584": {
+            "status": 6,
+            "run_result": {
+                "output": "220310\n143000\n202945\n061015\n211015\n201600\n110934",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3585": {
+            "status": 6,
+            "run_result": {
+                "output": "101011\n101013\n000000\n110000\n101100\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3586": {
+            "status": 6,
+            "run_result": {
+                "output": "101009\n101007\n235959\n095959\n100959\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3587": {
+            "status": 6,
+            "run_result": {
+                "output": "101015\n101010\n101010\n000004\n110004\n101104\n235955\n095955\n100955",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3588": {
+            "status": 1,
+            "run_result": {
+                "output": "10 10 10",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3589": {
+            "status": 1,
+            "run_result": {
+                "output": "5 5\n-5 -5\n9003 9003\n-9003 -9003",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3590": {
+            "status": 6,
+            "run_result": {
+                "output": "10 10 10\n101010",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3591": {
+            "status": 1,
+            "run_result": {
+                "output": "4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1558704266
+}

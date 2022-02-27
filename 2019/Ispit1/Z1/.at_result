@@ -1,0 +1,111 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In function ‘std::__cxx11::list<bool> TransformirajMatricu(Matrica&)’:\nmain.cpp:41:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         if (Suma(x)==int(Suma(x))) {\n                                 ^\nmain.cpp:44:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n         if (Suma(x)!=int(Suma(x))){\n                                 ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "41",
+                "col": "33",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_4559/main.cpp:41:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         if (Suma(x)==int(Suma(x))) {                                 ^",
+                "code": "if (Suma(x)==int(Suma(x))) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "44",
+                "col": "33",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_4559/main.cpp:44:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]         if (Suma(x)!=int(Suma(x))){                                 ^",
+                "code": "if (Suma(x)!=int(Suma(x))){"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "9": {
+            "status": 9,
+            "run_result": {
+                "output": "Unesite broj redova: Unesite broj kolona: Unesite elemente matrice: ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "10": {
+            "status": 9,
+            "run_result": {
+                "output": "Unesite broj redova: Unesite broj kolona: Unesite elemente matrice: ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "11": {
+            "status": 9,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "12": {
+            "status": 1,
+            "run_result": {
+                "output": "Izuzetak: Parametar nema formu matrice",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "13": {
+            "status": 9,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1587477135
+}

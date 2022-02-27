@@ -1,0 +1,953 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In instantiation of ‘Matrica<TipEl>::Matrica(int, int, char) [with TipEl = double]’:\nmain.cpp:269:30:   required from here\nmain.cpp:18:7: warning: ‘Matrica<double>::ime_matrice’ will be initialized after [-Wreorder]\n  char ime_matrice;\n       ^~~~~~~~~~~\nmain.cpp:17:10: warning:   ‘double** Matrica<double>::elementi’ [-Wreorder]\n  TipEl **elementi;\n          ^~~~~~~~\nmain.cpp:109:1: warning:   when initialized here [-Wreorder]\n Matrica<TipEl>::Matrica(int br_redova, int br_kolona, char ime) :\n ^~~~~~~~~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "18",
+                "col": "7",
+                "message": "'Matrica<double>::ime_matrice' will be initialized after",
+                "output": "/tmp/buildservice/bs_9332/main.cpp:18:7: warning: ‘Matrica<double>::ime_matrice’ will be initialized after [-Wreorder]  char ime_matrice;       ^~~~~~~~~~~",
+                "code": "char ime_matrice;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "17",
+                "col": "10",
+                "message": "'double** Matrica<double>::elementi'",
+                "output": "/tmp/buildservice/bs_9332/main.cpp:17:10: warning:   ‘double** Matrica<double>::elementi’ [-Wreorder]  TipEl **elementi;          ^~~~~~~~",
+                "code": "TipEl **elementi;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "109",
+                "col": "1",
+                "message": "when initialized here",
+                "output": "/tmp/buildservice/bs_9332/main.cpp:109:1: warning:   when initialized here [-Wreorder] Matrica<TipEl>::Matrica(int br_redova, int br_kolona, char ime) : ^~~~~~~~~~~~~~",
+                "code": "Matrica<TipEl>::Matrica(int br_redova, int br_kolona, char ime) :"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3767": {
+            "status": 1,
+            "run_result": {
+                "output": "Matrice nisu saglasne za mnozenje",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3773": {
+            "status": 1,
+            "run_result": {
+                "output": "2 4 6 \n8 10 13 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3774": {
+            "status": 1,
+            "run_result": {
+                "output": "Neispravan indeks",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3775": {
+            "status": 1,
+            "run_result": {
+                "output": "1 1 0 \n0 -1 1 \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3776": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3776.cpp: In instantiation of ‘Matrica<TipEl> operator*(const Matrica<TipEl>&, int) [with TipEl = double]’:\nbs_test_3776.cpp:228:10:   required from ‘Matrica<TipEl> operator*(int, const Matrica<TipEl>&) [with TipEl = double]’\nbs_test_3776.cpp:302:23:   required from here\nbs_test_3776.cpp:217:22: error: ‘int Matrica<double>::br_redova’ is private within this context\n  Matrica<TipEl> m3(m.br_redova,m.br_kolona);\n                    ~~^~~~~~~~~\nbs_test_3776.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3776.cpp:217:34: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  Matrica<TipEl> m3(m.br_redova,m.br_kolona);\n                                ~~^~~~~~~~~\nbs_test_3776.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3776.cpp:218:20: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m.br_redova; i++) {\n                  ~~^~~~~~~~~\nbs_test_3776.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3776.cpp:219:21: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m.br_kolona; j++) {\n                   ~~^~~~~~~~~\nbs_test_3776.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3776.cpp:220:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m3.elementi[i][j]=m.elementi[i][j]*n;\n    ~~~^~~~~~~~\nbs_test_3776.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3776.cpp:220:24: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m3.elementi[i][j]=m.elementi[i][j]*n;\n                      ~~^~~~~~~~\nbs_test_3776.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 211,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3776.cpp:217:22: error: ‘int Matrica<double>::br_redova’ is private within this context  Matrica<TipEl> m3(m.br_redova,m.br_kolona);                    ~~^~~~~~~~~",
+                        "code": "Matrica<TipEl> m3(m.br_redova,m.br_kolona);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 211,
+                        "col": "34",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3776.cpp:217:34: error: ‘int Matrica<double>::br_kolona’ is private within this context  Matrica<TipEl> m3(m.br_redova,m.br_kolona);                                ~~^~~~~~~~~",
+                        "code": "Matrica<TipEl> m3(m.br_redova,m.br_kolona);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 212,
+                        "col": "20",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3776.cpp:218:20: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m.br_redova; i++) {                  ~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m.br_redova; i++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 213,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3776.cpp:219:21: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m.br_kolona; j++) {                   ~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m.br_kolona; j++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 214,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3776.cpp:220:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m3.elementi[i][j]=m.elementi[i][j]*n;    ~~~^~~~~~~~",
+                        "code": "m3.elementi[i][j]=m.elementi[i][j]*n;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 214,
+                        "col": "24",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3776.cpp:220:24: error: ‘double** Matrica<double>::elementi’ is private within this context    m3.elementi[i][j]=m.elementi[i][j]*n;                      ~~^~~~~~~~",
+                        "code": "m3.elementi[i][j]=m.elementi[i][j]*n;"
+                    }
+                ]
+            }
+        },
+        "3777": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3777.cpp: In instantiation of ‘Matrica<TipEl> operator*(const Matrica<TipEl>&, int) [with TipEl = int]’:\nbs_test_3777.cpp:307:5:   required from here\nbs_test_3777.cpp:217:22: error: ‘int Matrica<int>::br_redova’ is private within this context\n  Matrica<TipEl> m3(m.br_redova,m.br_kolona);\n                    ~~^~~~~~~~~\nbs_test_3777.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3777.cpp:217:34: error: ‘int Matrica<int>::br_kolona’ is private within this context\n  Matrica<TipEl> m3(m.br_redova,m.br_kolona);\n                                ~~^~~~~~~~~\nbs_test_3777.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3777.cpp:218:20: error: ‘int Matrica<int>::br_redova’ is private within this context\n  for (int i=0; i<m.br_redova; i++) {\n                  ~~^~~~~~~~~\nbs_test_3777.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3777.cpp:219:21: error: ‘int Matrica<int>::br_kolona’ is private within this context\n   for (int j=0; j<m.br_kolona; j++) {\n                   ~~^~~~~~~~~\nbs_test_3777.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3777.cpp:220:7: error: ‘int** Matrica<int>::elementi’ is private within this context\n    m3.elementi[i][j]=m.elementi[i][j]*n;\n    ~~~^~~~~~~~\nbs_test_3777.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3777.cpp:220:24: error: ‘int** Matrica<int>::elementi’ is private within this context\n    m3.elementi[i][j]=m.elementi[i][j]*n;\n                      ~~^~~~~~~~\nbs_test_3777.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 211,
+                        "col": "22",
+                        "message": "'int Matrica<int>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3777.cpp:217:22: error: ‘int Matrica<int>::br_redova’ is private within this context  Matrica<TipEl> m3(m.br_redova,m.br_kolona);                    ~~^~~~~~~~~",
+                        "code": "Matrica<TipEl> m3(m.br_redova,m.br_kolona);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 211,
+                        "col": "34",
+                        "message": "'int Matrica<int>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3777.cpp:217:34: error: ‘int Matrica<int>::br_kolona’ is private within this context  Matrica<TipEl> m3(m.br_redova,m.br_kolona);                                ~~^~~~~~~~~",
+                        "code": "Matrica<TipEl> m3(m.br_redova,m.br_kolona);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 212,
+                        "col": "20",
+                        "message": "'int Matrica<int>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3777.cpp:218:20: error: ‘int Matrica<int>::br_redova’ is private within this context  for (int i=0; i<m.br_redova; i++) {                  ~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m.br_redova; i++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 213,
+                        "col": "21",
+                        "message": "'int Matrica<int>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3777.cpp:219:21: error: ‘int Matrica<int>::br_kolona’ is private within this context   for (int j=0; j<m.br_kolona; j++) {                   ~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m.br_kolona; j++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 214,
+                        "col": "7",
+                        "message": "'int** Matrica<int>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3777.cpp:220:7: error: ‘int** Matrica<int>::elementi’ is private within this context    m3.elementi[i][j]=m.elementi[i][j]*n;    ~~~^~~~~~~~",
+                        "code": "m3.elementi[i][j]=m.elementi[i][j]*n;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 214,
+                        "col": "24",
+                        "message": "'int** Matrica<int>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3777.cpp:220:24: error: ‘int** Matrica<int>::elementi’ is private within this context    m3.elementi[i][j]=m.elementi[i][j]*n;                      ~~^~~~~~~~",
+                        "code": "m3.elementi[i][j]=m.elementi[i][j]*n;"
+                    }
+                ]
+            }
+        },
+        "3778": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3778.cpp: In instantiation of ‘Matrica<TipEl>& operator+=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3778.cpp:302:4:   required from here\nbs_test_3778.cpp:176:9: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n      ~~~^~~~~~~~~\nbs_test_3778.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3778.cpp:176:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                    ~~~^~~~~~~~~\nbs_test_3778.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3778.cpp:176:39: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                    ~~~^~~~~~~~~\nbs_test_3778.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3778.cpp:176:53: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                                  ~~~^~~~~~~~~\nbs_test_3778.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3778.cpp:177:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3778.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3778.cpp:178:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++)\n                   ~~~^~~~~~~~~\nbs_test_3778.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3778.cpp:179:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n    ~~~^~~~~~~~\nbs_test_3778.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3778.cpp:179:25: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n                      ~~~^~~~~~~~\nbs_test_3778.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3778.cpp:179:43: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n                                        ~~~^~~~~~~~\nbs_test_3778.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3778.cpp: In instantiation of ‘Matrica<TipEl>& operator-=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3778.cpp:303:4:   required from here\nbs_test_3778.cpp:195:9: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n      ~~~^~~~~~~~~\nbs_test_3778.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3778.cpp:195:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                    ~~~^~~~~~~~~\nbs_test_3778.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3778.cpp:195:39: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                    ~~~^~~~~~~~~\nbs_test_3778.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3778.cpp:195:53: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                                  ~~~^~~~~~~~~\nbs_test_3778.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3778.cpp:196:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3778.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3778.cpp:197:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++)\n                   ~~~^~~~~~~~~\nbs_test_3778.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3778.cpp:198:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n    ~~~^~~~~~~~\nbs_test_3778.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3778.cpp:198:25: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n                      ~~~^~~~~~~~\nbs_test_3778.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3778.cpp:198:43: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n                                        ~~~^~~~~~~~\nbs_test_3778.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:176:9: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:176:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "39",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:176:39: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "53",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:176:53: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                                  ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 171,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:177:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 172,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:178:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++)                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:179:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];    ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "25",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:179:25: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];                      ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "43",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:179:43: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];                                        ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:195:9: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:195:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "39",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:195:39: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "53",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:195:53: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                                  ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 190,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:196:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 191,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:197:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++)                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:198:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];    ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "25",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:198:25: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];                      ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "43",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3778.cpp:198:43: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];                                        ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    }
+                ]
+            }
+        },
+        "3779": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3779.cpp: In instantiation of ‘Matrica<TipEl>& operator*=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3779.cpp:302:4:   required from here\nbs_test_3779.cpp:233:9: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_kolona!=m2.br_redova) throw std::domain_error (\"Matrice nisu saglasne za mnozenje\");\n      ~~~^~~~~~~~~\nbs_test_3779.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3779.cpp:233:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_kolona!=m2.br_redova) throw std::domain_error (\"Matrice nisu saglasne za mnozenje\");\n                    ~~~^~~~~~~~~\nbs_test_3779.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3779.cpp:234:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  Matrica<TipEl> m3(m1.br_redova,m1.br_kolona);\n                    ~~~^~~~~~~~~\nbs_test_3779.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3779.cpp:234:36: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  Matrica<TipEl> m3(m1.br_redova,m1.br_kolona);\n                                 ~~~^~~~~~~~~\nbs_test_3779.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3779.cpp:235:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3779.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3779.cpp:236:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++) {\n                   ~~~^~~~~~~~~\nbs_test_3779.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3779.cpp:238:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n    for (int k=0; k<m2.br_redova; k++) suma+=m1[i][k]*m2[k][j];\n                    ~~~^~~~~~~~~\nbs_test_3779.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3779.cpp: In instantiation of ‘Matrica<TipEl>& operator*=(Matrica<TipEl>&, int) [with TipEl = double]’:\nbs_test_3779.cpp:303:4:   required from here\nbs_test_3779.cpp:246:20: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m.br_redova; i++) {\n                  ~~^~~~~~~~~\nbs_test_3779.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3779.cpp:247:21: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m.br_kolona; j++) {\n                   ~~^~~~~~~~~\nbs_test_3779.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3779.cpp:248:6: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m.elementi[i][j]=m.elementi[i][j]*n;\n    ~~^~~~~~~~\nbs_test_3779.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3779.cpp:248:23: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m.elementi[i][j]=m.elementi[i][j]*n;\n                     ~~^~~~~~~~\nbs_test_3779.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 227,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:233:9: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_kolona!=m2.br_redova) throw std::domain_error (\"Matrice nisu saglasne za mnozenje\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_kolona!=m2.br_redova) throw std::domain_error (\"Matrice nisu saglasne za mnozenje\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 227,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:233:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_kolona!=m2.br_redova) throw std::domain_error (\"Matrice nisu saglasne za mnozenje\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_kolona!=m2.br_redova) throw std::domain_error (\"Matrice nisu saglasne za mnozenje\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 228,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:234:23: error: ‘int Matrica<double>::br_redova’ is private within this context  Matrica<TipEl> m3(m1.br_redova,m1.br_kolona);                    ~~~^~~~~~~~~",
+                        "code": "Matrica<TipEl> m3(m1.br_redova,m1.br_kolona);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 228,
+                        "col": "36",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:234:36: error: ‘int Matrica<double>::br_kolona’ is private within this context  Matrica<TipEl> m3(m1.br_redova,m1.br_kolona);                                 ~~~^~~~~~~~~",
+                        "code": "Matrica<TipEl> m3(m1.br_redova,m1.br_kolona);"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 229,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:235:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 230,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:236:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++) {                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 232,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:238:23: error: ‘int Matrica<double>::br_redova’ is private within this context    for (int k=0; k<m2.br_redova; k++) suma+=m1[i][k]*m2[k][j];                    ~~~^~~~~~~~~",
+                        "code": "for (int k=0; k<m2.br_redova; k++) suma+=m1[i][k]*m2[k][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 240,
+                        "col": "20",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:246:20: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m.br_redova; i++) {                  ~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m.br_redova; i++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 241,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:247:21: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m.br_kolona; j++) {                   ~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m.br_kolona; j++) {"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 242,
+                        "col": "6",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:248:6: error: ‘double** Matrica<double>::elementi’ is private within this context    m.elementi[i][j]=m.elementi[i][j]*n;    ~~^~~~~~~~",
+                        "code": "m.elementi[i][j]=m.elementi[i][j]*n;"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 242,
+                        "col": "23",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3779.cpp:248:23: error: ‘double** Matrica<double>::elementi’ is private within this context    m.elementi[i][j]=m.elementi[i][j]*n;                     ~~^~~~~~~~",
+                        "code": "m.elementi[i][j]=m.elementi[i][j]*n;"
+                    }
+                ]
+            }
+        },
+        "3780": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3780.cpp: In instantiation of ‘Matrica<TipEl>& operator+=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3780.cpp:303:10:   required from here\nbs_test_3780.cpp:176:9: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n      ~~~^~~~~~~~~\nbs_test_3780.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3780.cpp:176:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                    ~~~^~~~~~~~~\nbs_test_3780.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3780.cpp:176:39: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                    ~~~^~~~~~~~~\nbs_test_3780.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3780.cpp:176:53: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                                  ~~~^~~~~~~~~\nbs_test_3780.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3780.cpp:177:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3780.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3780.cpp:178:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++)\n                   ~~~^~~~~~~~~\nbs_test_3780.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3780.cpp:179:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n    ~~~^~~~~~~~\nbs_test_3780.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3780.cpp:179:25: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n                      ~~~^~~~~~~~\nbs_test_3780.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3780.cpp:179:43: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n                                        ~~~^~~~~~~~\nbs_test_3780.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3780.cpp: In instantiation of ‘Matrica<TipEl>& operator-=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3780.cpp:304:10:   required from here\nbs_test_3780.cpp:195:9: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n      ~~~^~~~~~~~~\nbs_test_3780.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3780.cpp:195:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                    ~~~^~~~~~~~~\nbs_test_3780.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3780.cpp:195:39: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                    ~~~^~~~~~~~~\nbs_test_3780.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3780.cpp:195:53: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                                  ~~~^~~~~~~~~\nbs_test_3780.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3780.cpp:196:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3780.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3780.cpp:197:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++)\n                   ~~~^~~~~~~~~\nbs_test_3780.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3780.cpp:198:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n    ~~~^~~~~~~~\nbs_test_3780.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3780.cpp:198:25: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n                      ~~~^~~~~~~~\nbs_test_3780.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3780.cpp:198:43: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n                                        ~~~^~~~~~~~\nbs_test_3780.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:176:9: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:176:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "39",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:176:39: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "53",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:176:53: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                                  ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 171,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:177:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 172,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:178:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++)                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:179:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];    ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "25",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:179:25: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];                      ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "43",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:179:43: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];                                        ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:195:9: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:195:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "39",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:195:39: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "53",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:195:53: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                                  ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 190,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:196:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 191,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:197:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++)                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:198:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];    ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "25",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:198:25: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];                      ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "43",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3780.cpp:198:43: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];                                        ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    }
+                ]
+            }
+        },
+        "3781": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesi broj redova i kolona za matrice:\nUnesi matricu A:\nA(1,1) = A(1,2) = A(2,1) = A(2,2) = Unesi matricu B:\nB(1,1) = B(1,2) = B(2,1) = B(2,2) = 10 2 \n4 3 \n---------------\n10 2 \n4 3 \n   10    2\n    4    3\n    1    1\n    7   10\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3782": {
+            "status": 1,
+            "run_result": {
+                "output": "{{10,2},{4,5}}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3783": {
+            "status": 1,
+            "run_result": {
+                "output": "{{10,2},{4,5}}\n{{10,2},{4,5}}\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3784": {
+            "status": 1,
+            "run_result": {
+                "output": "Matrice nemaju jednake dimenzije!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3785": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3785.cpp: In instantiation of ‘Matrica<TipEl>& operator-=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3785.cpp:296:4:   required from here\nbs_test_3785.cpp:195:9: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n      ~~~^~~~~~~~~\nbs_test_3785.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3785.cpp:195:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                    ~~~^~~~~~~~~\nbs_test_3785.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3785.cpp:195:39: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                    ~~~^~~~~~~~~\nbs_test_3785.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3785.cpp:195:53: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                                  ~~~^~~~~~~~~\nbs_test_3785.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3785.cpp:196:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3785.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3785.cpp:197:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++)\n                   ~~~^~~~~~~~~\nbs_test_3785.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3785.cpp:198:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n    ~~~^~~~~~~~\nbs_test_3785.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3785.cpp:198:25: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n                      ~~~^~~~~~~~\nbs_test_3785.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3785.cpp:198:43: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];\n                                        ~~~^~~~~~~~\nbs_test_3785.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:195:9: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:195:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "39",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:195:39: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 189,
+                        "col": "53",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:195:53: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                                  ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 190,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:196:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 191,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:197:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++)                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:198:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];    ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "25",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:198:25: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];                      ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 192,
+                        "col": "43",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3785.cpp:198:43: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];                                        ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]-m2.elementi[i][j];"
+                    }
+                ]
+            }
+        },
+        "3786": {
+            "status": 1,
+            "run_result": {
+                "output": "Matrice nemaju jednake dimenzije!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3787": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_3787.cpp: In instantiation of ‘Matrica<TipEl>& operator+=(Matrica<TipEl>&, const Matrica<TipEl>&) [with TipEl = double]’:\nbs_test_3787.cpp:296:4:   required from here\nbs_test_3787.cpp:176:9: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n      ~~~^~~~~~~~~\nbs_test_3787.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3787.cpp:176:23: error: ‘int Matrica<double>::br_redova’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                    ~~~^~~~~~~~~\nbs_test_3787.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3787.cpp:176:39: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                    ~~~^~~~~~~~~\nbs_test_3787.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3787.cpp:176:53: error: ‘int Matrica<double>::br_kolona’ is private within this context\n  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");\n                                                  ~~~^~~~~~~~~\nbs_test_3787.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3787.cpp:177:21: error: ‘int Matrica<double>::br_redova’ is private within this context\n  for (int i=0; i<m1.br_redova; i++)\n                  ~~~^~~~~~~~~\nbs_test_3787.cpp:22:6: note: declared private here\n  int br_redova, br_kolona;\n      ^~~~~~~~~\nbs_test_3787.cpp:178:22: error: ‘int Matrica<double>::br_kolona’ is private within this context\n   for (int j=0; j<m1.br_kolona; j++)\n                   ~~~^~~~~~~~~\nbs_test_3787.cpp:22:17: note: declared private here\n  int br_redova, br_kolona;\n                 ^~~~~~~~~\nbs_test_3787.cpp:179:7: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n    ~~~^~~~~~~~\nbs_test_3787.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3787.cpp:179:25: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n                      ~~~^~~~~~~~\nbs_test_3787.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~\nbs_test_3787.cpp:179:43: error: ‘double** Matrica<double>::elementi’ is private within this context\n    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];\n                                        ~~~^~~~~~~~\nbs_test_3787.cpp:23:10: note: declared private here\n  TipEl **elementi;\n          ^~~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "9",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:176:9: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");      ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "23",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:176:23: error: ‘int Matrica<double>::br_redova’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "39",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:176:39: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                    ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 170,
+                        "col": "53",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:176:53: error: ‘int Matrica<double>::br_kolona’ is private within this context  if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");                                                  ~~~^~~~~~~~~",
+                        "code": "if (m1.br_redova!=m2.br_redova || m1.br_kolona!=m2.br_kolona) throw std::domain_error (\"Matrice nemaju jednake dimenzije!\");"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 171,
+                        "col": "21",
+                        "message": "'int Matrica<double>::br_redova' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:177:21: error: ‘int Matrica<double>::br_redova’ is private within this context  for (int i=0; i<m1.br_redova; i++)                  ~~~^~~~~~~~~",
+                        "code": "for (int i=0; i<m1.br_redova; i++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 172,
+                        "col": "22",
+                        "message": "'int Matrica<double>::br_kolona' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:178:22: error: ‘int Matrica<double>::br_kolona’ is private within this context   for (int j=0; j<m1.br_kolona; j++)                   ~~~^~~~~~~~~",
+                        "code": "for (int j=0; j<m1.br_kolona; j++)"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "7",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:179:7: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];    ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "25",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:179:25: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];                      ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    },
+                    {
+                        "type": "error",
+                        "file": "main.cpp",
+                        "line": 173,
+                        "col": "43",
+                        "message": "'double** Matrica<double>::elementi' is private within this context",
+                        "output": "/tmp/buildservice/bs_9332/bs_test_3787.cpp:179:43: error: ‘double** Matrica<double>::elementi’ is private within this context    m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];                                        ~~~^~~~~~~~",
+                        "code": "m1.elementi[i][j]=m1.elementi[i][j]+m2.elementi[i][j];"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1590774694
+}

@@ -1,0 +1,7 @@
+/rhome/m/mhadzic9/workspace/TP/ZSR1/Z17/main.cpp: In function ‘int main()’:
+/rhome/m/mhadzic9/workspace/TP/ZSR1/Z17/main.cpp:29:16: error: too many arguments to function ‘int UnesiBroj()’
+     UnesiBroj(a);
+                ^
+/rhome/m/mhadzic9/workspace/TP/ZSR1/Z17/main.cpp:5:5: note: declared here
+ int UnesiBroj() {
+     ^~~~~~~~~

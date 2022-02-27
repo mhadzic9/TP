@@ -1,0 +1,59 @@
+{
+    "id": 5739,
+    "name": "Tehnike programiranja (2019\/2020), Ispit 5, Zadatak 1",
+    "language": "C++",
+    "preferred_compiler": "g++",
+    "required_compiler": "g++",
+    "compiler_features": [],
+    "compiler_options": "-std=c++11 -O1 -Wall -Wuninitialized -Winit-self -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-std=c++11 -ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "  {\n    std::cout << \"AT1 - testiranje parametara funkcije\" << std::endl;\n    std::vector<int> v{1, 2, 3, 4};\n    NZD(v);\n    std::cout << \"OK\" << std::endl;\n  }\n  \n  {\n    std::cout << \"AT2 - testiranje povratne vrijednosti funkcije\" << std::endl;\n    std::vector<int> v{1, 2, 3, 4};\n    int n = NZD(v);\n    std::cout << \"OK\" << std::endl;\n  }\n  \n  {\n    std::cout << \"AT3 - testiranje funkcije sa trivijalnim vrijednostima\" << std::endl;\n    std::cout << NZD({6, 12, 24}) << std::endl;\n  }\n  \n  {\n    std::cout << \"AT4 - testiranje funkcije sa trivijalnim vrijednostima\" << std::endl;\n    std::cout << NZD({12, 24, 36}) << \" \" << NZD({12, 24, 30}) << std::endl;\n  }\n  \n  {\n    std::cout << \"AT5 - testiranje funkcije - svi elementi vektora isti\" << std::endl;\n    std::cout << NZD({6, 6, 6, 6, 6}) << \" \" << NZD({7, 7, 7, 7, 7}) << std::endl;\n  }\n\n  {\n    std::cout << \"AT6 - testiranje funkcije - prazan vektor\" << std::endl;\n    std::cout << NZD({}) << std::endl;\n  }",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "AT1 - testiranje parametara funkcije\\nOK\\nAT2 - testiranje povratne vrijednosti funkcije\\nOK\\nAT3 - testiranje funkcije sa trivijalnim vrijednostima\\n6\\nAT4 - testiranje funkcije sa trivijalnim vrijednostima\\n12 6\\nAT5 - testiranje funkcije - svi elementi vektora isti\\n6 7\\nAT6 - testiranje funkcije - prazan vektor\\n0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "true",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "  {\n    \/\/ULAZ 4 6 12 24 48\n    \/\/IZLAZ: Koliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 6\n    std::cout << \"AT7 - studentski main\" << std::endl;\n    _main();\n  }\n  \n  {\n    \/\/ULAZ 0\n    \/\/IZLAZ: Koliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 0\n    std::cout << \"AT8 - studentski main sa praznim vektorom\" << std::endl;\n    _main();\n  }\n  \n  {\n    \/\/ULAZ 1 6\n    \/\/IZLAZ: Koliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 6\n    std::cout << \"AT9 - studentski main sa vektorom od jednog elementa\" << std::endl;\n    _main();\n  }\n  \n  {\n    \/\/ULAZ 5 30 45 15 45 30\n    \/\/IZLAZ: Koliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 15\n    std::cout << \"AT10 - studentski main sa vektorom od jednog elementa\" << std::endl;\n    _main();\n  }",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4 6 12 24 48 0 1 6 5 30 45 15 45 30\n"
+            },
+            "expected": [
+                "AT7 - studentski main\\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 6\\nAT8 - studentski main sa praznim vektorom\\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 0\\nAT9 - studentski main sa vektorom od jednog elementa\\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 6\\nAT10 - studentski main sa vektorom od jednog elementa\\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 15"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "true",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

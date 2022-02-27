@@ -1,0 +1,120 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.cpp: In constructor ‘Tim::Tim(const char*)’:\nmain.cpp:18:54: warning: ‘Tim::broj_nerijesenih’ will be initialized after [-Wreorder]\n  mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;\n                                                      ^~~~~~~~~~~~~~~~\nmain.cpp:18:42: warning:   ‘int Tim::broj_poraza’ [-Wreorder]\n  mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;\n                                          ^~~~~~~~~~~\nmain.cpp:20:2: warning:   when initialized here [-Wreorder]\n  Tim (const char ime[]):broj_odigranih(0),broj_pobjeda(0),broj_nerijesenih(0),broj_poraza(0),broj_datih(0),broj_primljenih(0),broj_poena(0)\n  ^~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "18",
+                "col": "54",
+                "message": "'Tim::broj_nerijesenih' will be initialized after",
+                "output": "/tmp/buildservice/bs_6899/main.cpp:18:54: warning: ‘Tim::broj_nerijesenih’ will be initialized after [-Wreorder]  mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;                                                      ^~~~~~~~~~~~~~~~",
+                "code": "mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "18",
+                "col": "42",
+                "message": "'int Tim::broj_poraza'",
+                "output": "/tmp/buildservice/bs_6899/main.cpp:18:42: warning:   ‘int Tim::broj_poraza’ [-Wreorder]  mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;                                          ^~~~~~~~~~~",
+                "code": "mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;"
+            },
+            {
+                "type": "warning",
+                "file": "main.cpp",
+                "line": "20",
+                "col": "2",
+                "message": "when initialized here",
+                "output": "/tmp/buildservice/bs_6899/main.cpp:20:2: warning:   when initialized here [-Wreorder]  Tim (const char ime[]):broj_odigranih(0),broj_pobjeda(0),broj_nerijesenih(0),broj_poraza(0),broj_datih(0),broj_primljenih(0),broj_poena(0)  ^~~",
+                "code": "Tim (const char ime[]):broj_odigranih(0),broj_pobjeda(0),broj_nerijesenih(0),broj_poraza(0),broj_datih(0),broj_primljenih(0),broj_poena(0)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "3703": {
+            "status": 1,
+            "run_result": {
+                "output": "Predugacko ime tima\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3704": {
+            "status": 1,
+            "run_result": {
+                "output": "Neispravan broj golova\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3705": {
+            "status": 1,
+            "run_result": {
+                "output": "Neispravan broj golova\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3706": {
+            "status": 1,
+            "run_result": {
+                "output": "FK Krupa 4 -1\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3707": {
+            "status": 1,
+            "run_result": {
+                "output": "NK Zeljeznicar         3   3   0   0   6   1   9\nFK Sarajevo            3   1   1   1   2   6   4\nHSK Zrinjski           3   0   1   2   1   4   1\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1590157031
+}

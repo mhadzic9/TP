@@ -1,0 +1,8 @@
+/rhome/m/mhadzic9/workspace/TP/T13/Z3/main.cpp: In member function ‘Fakultet& Fakultet::operator*(Fakultet&&)’:
+/rhome/m/mhadzic9/workspace/TP/T13/Z3/main.cpp:150:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/rhome/m/mhadzic9/workspace/TP/T13/Z3/main.cpp: In lambda function:
+/rhome/m/mhadzic9/workspace/TP/T13/Z3/main.cpp:187:40: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if (s1->DajProsjek()==s2->DajProsjek()) return s1->DajBrojIndeksa()<s2->DajBrojIndeksa();
+                                        ^

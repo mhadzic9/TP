@@ -1,0 +1,16 @@
+{
+    "id": 3995,
+    "name": "",
+    "language": "",
+    "required_compiler": "",
+    "preferred_compiler": "",
+    "compiler_features": [],
+    "compiler_options": "",
+    "compiler_options_debug": "",
+    "compile": "false",
+    "run": "false",
+    "test": "false",
+    "debug": "false",
+    "profile": "false",
+    "test_specifications": []
+}

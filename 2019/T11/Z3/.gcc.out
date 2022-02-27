@@ -1,0 +1,10 @@
+/rhome/m/mhadzic9/workspace/TP/T11/Z3/main.cpp: In constructor ‘Tim::Tim(const char*)’:
+/rhome/m/mhadzic9/workspace/TP/T11/Z3/main.cpp:18:54: warning: ‘Tim::broj_nerijesenih’ will be initialized after [-Wreorder]
+  mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;
+                                                      ^~~~~~~~~~~~~~~~
+/rhome/m/mhadzic9/workspace/TP/T11/Z3/main.cpp:18:42: warning:   ‘int Tim::broj_poraza’ [-Wreorder]
+  mutable int broj_odigranih,broj_pobjeda,broj_poraza,broj_nerijesenih,broj_datih,broj_primljenih,broj_poena;
+                                          ^~~~~~~~~~~
+/rhome/m/mhadzic9/workspace/TP/T11/Z3/main.cpp:20:2: warning:   when initialized here [-Wreorder]
+  Tim (const char ime[]):broj_odigranih(0),broj_pobjeda(0),broj_nerijesenih(0),broj_poraza(0),broj_datih(0),broj_primljenih(0),broj_poena(0)
+  ^~~

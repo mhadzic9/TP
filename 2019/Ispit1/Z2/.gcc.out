@@ -1,0 +1,4 @@
+/rhome/m/mhadzic9/workspace/TP/Ispit1/Z2/main.cpp: In function ‘int main()’:
+/rhome/m/mhadzic9/workspace/TP/Ispit1/Z2/main.cpp:39:43: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+             if (dek.at(i)-int(dek.at(i))==0)std::cout << dek.at(i) << " ";
+                                           ^

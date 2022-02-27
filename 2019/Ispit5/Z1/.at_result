@@ -1,0 +1,49 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "AT1 - testiranje parametara funkcije\nOK\nAT2 - testiranje povratne vrijednosti funkcije\nOK\nAT3 - testiranje funkcije sa trivijalnim vrijednostima\n6\nAT4 - testiranje funkcije sa trivijalnim vrijednostima\n12 6\nAT5 - testiranje funkcije - svi elementi vektora isti\n6 7\nAT6 - testiranje funkcije - prazan vektor\n0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "AT7 - studentski main\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 6AT8 - studentski main sa praznim vektorom\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 0AT9 - studentski main sa vektorom od jednog elementa\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 6AT10 - studentski main sa vektorom od jednog elementa\nKoliko ima brojeva: Unesite brojeve: Njihov najveci zajednicki djelilac je 15",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1594714362
+}

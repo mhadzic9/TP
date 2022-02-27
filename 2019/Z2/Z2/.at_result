@@ -1,0 +1,77 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "g++ (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "14": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: Izdvojeni brojevi: 15, 231, 42, 91, 213, 7\nModificirani kontejner (prije sortiranja): 363, 42, 91, 213\nModificirani kontejner (nakon sortiranja): 213, 42, 91, 363\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "15": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: Izdvojeni brojevi: 15, 2, 3\nModificirani kontejner (prije sortiranja): 25, 15\nModificirani kontejner (nakon sortiranja): 15, 25\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "16": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: Izdvojeni brojevi: 15, -231, -15, 42, 231, 91, 213, 7\nModificirani kontejner (prije sortiranja): 363, 42, 91, 213\nModificirani kontejner (nakon sortiranja): 213, 42, 91, 363\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "17": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite brojeve: Izdvojeni brojevi: 5, 10, 15, 30, -30, -15, -10, -5\nModificirani kontejner (prije sortiranja): \nModificirani kontejner (nakon sortiranja): \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1587403107
+}
